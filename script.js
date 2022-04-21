@@ -3,8 +3,10 @@ const people = document.querySelector('#people');
 const tip = document.querySelector('#tip');
 const error = document.querySelector('.error');
 const countBtn = document.querySelector('.count');
+const clearBtn = document.querySelector('.clear');
 const costInfo = document.querySelector('.cost-info');
 const cost = document.querySelector('.cost');
+
 
 function checkBill() {
 	if (price.value === '' || people.value === '' || tip.value === 0) {
@@ -24,4 +26,10 @@ function showBill() {
 	cost.textContent = sum.toFixed(2);
 }
 
+const clear  = () => {
+    price.value = '';
+    tip.value = 0;
+    people.value = '';
+}
 countBtn.addEventListener('click', checkBill);
+clearBtn.addEventListener('click', clear)

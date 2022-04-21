@@ -60,7 +60,20 @@ input, select {
     cursor: pointer;
     transition:  background-color .3s;
 }
+.clear {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 10px;
+    width: 60%;
+    font-size: 24px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgb(128, 9, 0);
+    border: none;
+    cursor: pointer;
+    transition:  background-color .3s;
 
+}
 .count:hover {
     background-color: lightgreen;
 }
